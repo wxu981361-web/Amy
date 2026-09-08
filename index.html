@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>個人作品集 | Your Name</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- 引入 FontAwesome 圖示庫 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- 導覽列 -->
+  <nav class="navbar">
+    <div class="logo">PORTFOLIO.</div>
+    <ul class="nav-links">
+      <li><a href="#about">關於我</a></li>
+      <li><a href="#projects">專題成果</a></li>
+      <li><a href="#timeline">大學歷程</a></li>
+      <li><a href="#contact">聯絡方式</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero 主頁面 -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>你好，我是 <span class="highlight">你的名字</span></h1>
+      <p>主修 [你的專業/科系] | 專注於 [你的領域，如：前端開發/視覺設計/AI應用]</p>
+      <a href="#projects" class="btn">查看作品</a>
+    </div>
+  </section>
+
+  <!-- 關於我 -->
+  <section id="about" class="section">
+    <h2>關於我</h2>
+    <div class="about-container">
+      <div class="about-text">
+        <p>這裡是你的自我介紹。簡述大學四年學習的心得、個人特質、擅長的工具技能（如 Python, React, Figma, C++ 等）。</p>
+        <div class="skills">
+          <span class="skill-tag">HTML / CSS / JS</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">UI/UX 設計</span>
+          <span class="skill-tag">專案管理</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 專題與成果展覽 (Card 樣式) -->
+  <section id="projects" class="section bg-light">
+    <h2>大學重點作品</h2>
+    <div class="project-grid">
+
+      <!-- 作品卡片 1 -->
+      <div class="project-card">
+        <img src="https://via.placeholder.com/400x250" alt="畢業專題">
+        <div class="project-info">
+          <h3>畢業專題：智慧核心系統</h3>
+          <p>描述這個專題解決了什麼問題、使用了什麼技術栈、你在團隊中扮演的角色。</p>
+          <div class="card-tags">
+            <span>Python</span><span>React</span>
+          </div>
+          <a href="#" target="_blank" class="card-link">查看詳情 / Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <!-- 作品卡片 2 -->
+      <div class="project-card">
+        <img src="https://via.placeholder.com/400x250" alt="課程作業">
+        <div class="project-info">
+          <h3>大三軟體工程作業</h3>
+          <p>課堂實作的系統或是Web App，簡述其主要功能與亮點。</p>
+          <div class="card-tags">
+            <span>JavaScript</span><span>Node.js</span>
+          </div>
+          <a href="#" target="_blank" class="card-link">GitHub 程式碼 <i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+
+      <!-- 作品卡片 3 -->
+      <div class="project-card">
+        <img src="https://via.placeholder.com/400x250" alt="競賽作品">
+        <div class="project-info">
+          <h3>黑客松 / 商業競賽作品</h3>
+          <p>獲得佳績或高張力的短期專案作品展示。</p>
+          <div class="card-tags">
+            <span>Figma</span><span>原型設計</span>
+          </div>
+          <a href="#" target="_blank" class="card-link">簡報 / 連結 <i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 四年歷程 (時間軸) -->
+  <section id="timeline" class="section">
+    <h2>大學四年歷程</h2>
+    <div class="timeline-container">
+      <div class="timeline-item">
+        <div class="timeline-date">大四 (2025 - 2026)</div>
+        <div class="timeline-content">
+          <h3>完成畢業專題 & 企業實習</h3>
+          <p>於 XX 公司實習，擔任前端實習生；完成大四畢業製作並公開發表。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">大三 (2024 - 2025)</div>
+        <div class="timeline-content">
+          <h3>核心專業科目 & 全國競賽</h3>
+          <p>組隊參加全國大專院校智慧創新競賽，獲得優等。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">大二 (2023 - 2024)</div>
+        <div class="timeline-content">
+          <h3>社團幹部 & 基礎專案</h3>
+          <p>擔任資訊社團教學幹部，自主完成第一個 Full-stack 實案。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">大一 (2022 - 2023)</div>
+        <div class="timeline-content">
+          <h3>探索與基礎累積</h3>
+          <p>學習程式語言基礎（C/C++/Python），修習基礎計算機概論。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 聯絡頁尾 -->
+  <footer id="contact">
+    <h2>聯絡我</h2>
+    <p>歡迎與我交流或討論合作機會！</p>
+    <div class="social-links">
+      <a href="mailto:your.email@example.com"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://github.com/yourusername" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <p class="copyright">&copy; 2026 Your Name. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
