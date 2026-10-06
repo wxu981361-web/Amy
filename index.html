@@ -3,143 +3,130 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>個人作品集 | Your Name</title>
+  <title>山霧茶事｜高山茶與茶點</title>
   <link rel="stylesheet" href="style.css">
-  <!-- 引入 FontAwesome 圖示庫 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- 導覽列 -->
-  <nav class="navbar">
-    <div class="logo">PORTFOLIO.</div>
-    <ul class="nav-links">
-      <li><a href="#about">關於我</a></li>
-      <li><a href="#projects">專題成果</a></li>
-      <li><a href="#timeline">大學歷程</a></li>
-      <li><a href="#contact">聯絡方式</a></li>
-    </ul>
-  </nav>
+  <!-- 1. 品牌主視覺與導覽 -->
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="#top">
+        <span class="brand-mark">山霧</span>
+        <span class="brand-name">山霧茶事</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#top">首頁</a></li>
+        <li><a href="#products">商品</a></li>
+        <li><a href="#story">品牌故事</a></li>
+        <li><a href="#faq">常見問題</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Hero 主頁面 -->
-  <section id="hero">
-    <div class="hero-content">
-      <h1>你好，我是 <span class="highlight">你的名字</span></h1>
-      <p>主修 [你的專業/科系] | 專注於 [你的領域，如：前端開發/視覺設計/AI應用]</p>
-      <a href="#projects" class="btn">查看作品</a>
+  <section class="hero" id="top">
+    <img class="hero-img" src="images/hero.jpg" alt="清晨山霧繚繞的茶園">
+    <div class="hero-text">
+      <p class="hero-kicker">產自海拔 1,200 公尺</p>
+      <h1>山霧之間，<br>一盞好茶</h1>
+      <p class="hero-desc">清晨採收、慢火焙製，把山嵐的溫柔封進每一片茶葉。</p>
+      <a class="btn" href="#products">瀏覽商品</a>
     </div>
   </section>
 
-  <!-- 關於我 -->
-  <section id="about" class="section">
-    <h2>關於我</h2>
-    <div class="about-container">
-      <div class="about-text">
-        <p>這裡是你的自我介紹。簡述大學四年學習的心得、個人特質、擅長的工具技能（如 Python, React, Figma, C++ 等）。</p>
-        <div class="skills">
-          <span class="skill-tag">HTML / CSS / JS</span>
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">UI/UX 設計</span>
-          <span class="skill-tag">專案管理</span>
+  <!-- 2. 商品（本地圖片） -->
+  <section class="section" id="products">
+    <h2 class="section-title">嚴選商品</h2>
+    <p class="section-sub">四款店內招牌，茶葉、茶點與茶具一次備齊。</p>
+
+    <div class="card-grid">
+      <article class="card">
+        <img src="images/product-oolong.jpg" alt="沖泡中的高山烏龍茶">
+        <span class="tip">適合族群｜25 歲以上上班族・送禮首選</span>
+        <div class="card-body">
+          <h3>高山烏龍茶</h3>
+          <p>輕發酵、高山冷韻，入口回甘帶淡淡花香。</p>
+          <p class="price">NT$ 480</p>
         </div>
-      </div>
+      </article>
+
+      <article class="card">
+        <img src="images/product-matcha.jpg" alt="抹茶甜點與抹茶拿鐵">
+        <span class="tip">適合族群｜20–45 歲・抹茶愛好者・送禮</span>
+        <div class="card-body">
+          <h3>手刷抹茶禮盒</h3>
+          <p>石臼研磨抹茶粉，搭配茶筅與和菓子食譜卡。</p>
+          <p class="price">NT$ 620</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="images/product-teapot.jpg" alt="藍釉陶瓷茶壺與茶杯組">
+        <span class="tip">適合族群｜30–60 歲・家庭與新居入厝送禮</span>
+        <div class="card-body">
+          <h3>藍釉茶具組</h3>
+          <p>一壺四杯，釉色如夜山沉靜，適合日常茶席。</p>
+          <p class="price">NT$ 1,280</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="images/product-tiramisu.jpg" alt="抹茶提拉米蘇">
+        <span class="tip">適合族群｜全年齡・甜食控・下午茶聚會</span>
+        <div class="card-body">
+          <h3>抹茶提拉米蘇</h3>
+          <p>每日限量手作，茶香與奶香交疊的柔軟層次。</p>
+          <p class="price">NT$ 180</p>
+        </div>
+      </article>
     </div>
   </section>
 
-  <!-- 專題與成果展覽 (Card 樣式) -->
-  <section id="projects" class="section bg-light">
-    <h2>大學重點作品</h2>
-    <div class="project-grid">
-
-      <!-- 作品卡片 1 -->
-      <div class="project-card">
-        <img src="https://via.placeholder.com/400x250" alt="畢業專題">
-        <div class="project-info">
-          <h3>畢業專題：智慧核心系統</h3>
-          <p>描述這個專題解決了什麼問題、使用了什麼技術栈、你在團隊中扮演的角色。</p>
-          <div class="card-tags">
-            <span>Python</span><span>React</span>
-          </div>
-          <a href="#" target="_blank" class="card-link">查看詳情 / Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-      </div>
-
-      <!-- 作品卡片 2 -->
-      <div class="project-card">
-        <img src="https://via.placeholder.com/400x250" alt="課程作業">
-        <div class="project-info">
-          <h3>大三軟體工程作業</h3>
-          <p>課堂實作的系統或是Web App，簡述其主要功能與亮點。</p>
-          <div class="card-tags">
-            <span>JavaScript</span><span>Node.js</span>
-          </div>
-          <a href="#" target="_blank" class="card-link">GitHub 程式碼 <i class="fa-brands fa-github"></i></a>
-        </div>
-      </div>
-
-      <!-- 作品卡片 3 -->
-      <div class="project-card">
-        <img src="https://via.placeholder.com/400x250" alt="競賽作品">
-        <div class="project-info">
-          <h3>黑客松 / 商業競賽作品</h3>
-          <p>獲得佳績或高張力的短期專案作品展示。</p>
-          <div class="card-tags">
-            <span>Figma</span><span>原型設計</span>
-          </div>
-          <a href="#" target="_blank" class="card-link">簡報 / 連結 <i class="fa-solid fa-link"></i></a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- 四年歷程 (時間軸) -->
-  <section id="timeline" class="section">
-    <h2>大學四年歷程</h2>
-    <div class="timeline-container">
-      <div class="timeline-item">
-        <div class="timeline-date">大四 (2025 - 2026)</div>
-        <div class="timeline-content">
-          <h3>完成畢業專題 & 企業實習</h3>
-          <p>於 XX 公司實習，擔任前端實習生；完成大四畢業製作並公開發表。</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-date">大三 (2024 - 2025)</div>
-        <div class="timeline-content">
-          <h3>核心專業科目 & 全國競賽</h3>
-          <p>組隊參加全國大專院校智慧創新競賽，獲得優等。</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-date">大二 (2023 - 2024)</div>
-        <div class="timeline-content">
-          <h3>社團幹部 & 基礎專案</h3>
-          <p>擔任資訊社團教學幹部，自主完成第一個 Full-stack 實案。</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-date">大一 (2022 - 2023)</div>
-        <div class="timeline-content">
-          <h3>探索與基礎累積</h3>
-          <p>學習程式語言基礎（C/C++/Python），修習基礎計算機概論。</p>
-        </div>
+  <!-- 品牌故事 -->
+  <section class="section section-alt" id="story">
+    <div class="story-wrap">
+      <img class="story-img" src="images/story.jpg" alt="黑色陶壺特寫">
+      <div class="story-text">
+        <h2 class="section-title">品牌故事</h2>
+        <p>「山霧茶事」源自坪林山城的家族茶園。第三代返鄉後，堅持友善耕作與小量焙製，希望能讓更多人喝懂台灣高山茶的山頭氣。</p>
+        <p>從茶園到茶席，我們只留下最必要的步驟，把時間還給茶葉本身。</p>
       </div>
     </div>
   </section>
 
-  <!-- 聯絡頁尾 -->
-  <footer id="contact">
-    <h2>聯絡我</h2>
-    <p>歡迎與我交流或討論合作機會！</p>
-    <div class="social-links">
-      <a href="mailto:your.email@example.com"><i class="fa-solid fa-envelope"></i></a>
-      <a href="https://github.com/yourusername" target="_blank"><i class="fa-brands fa-github"></i></a>
-      <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+  <!-- 3. FAQ -->
+  <section class="section" id="faq">
+    <h2 class="section-title">常見問題 FAQ</h2>
+    <div class="faq-list">
+      <details>
+        <summary>茶葉建議怎麼沖泡？</summary>
+        <p>以 95°C 熱水沖泡，首泡約 40 秒後出湯，後續每泡依口感酌量增加 10～20 秒。</p>
+      </details>
+      <details>
+        <summary>運費如何計算？</summary>
+        <p>單筆滿 NT$ 1,000 免運，未滿酌收 NT$ 80 常溫運費，外島地區另計。</p>
+      </details>
+      <details>
+        <summary>保存期限與保存方式？</summary>
+        <p>茶葉未開封可保存 18 個月，請置於陰涼乾燥處，開封後建議密封冷藏並盡早飲用完畢。</p>
+      </details>
+      <details>
+        <summary>可以退換貨嗎？</summary>
+        <p>食品類商品除重大瑕疵外不適用七日鑑賞期；若收到商品有破損，請於三日內聯繫客服處理。</p>
+      </details>
     </div>
-    <p class="copyright">&copy; 2026 Your Name. All rights reserved.</p>
+  </section>
+
+  <!-- 頁尾：教學用途聲明 -->
+  <footer class="site-footer">
+    <p class="footer-brand">山霧茶事 SHAN WU TEA</p>
+    <p class="disclaimer">
+      教學用途聲明：本網站僅作為網頁設計課程之教學範例使用，
+      站內品牌名稱、商品、價格、圖片與文案皆為練習用途之虛構或示範內容，
+      不代表任何真實商家或交易，亦無實際販售行為。
+    </p>
+    <p class="copyright">© 2026 山霧茶事（教學示範）. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
